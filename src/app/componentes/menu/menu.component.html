@@ -1,0 +1,32 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav mode="side" opened class="sidenav">
+      <h2>MENU DE OPCIONES</h2>
+      <mat-nav-list>
+        <mat-list-item routerLink="/usuarios">
+          <mat-icon>person</mat-icon>
+          <span>USUARIOS</span>
+        </mat-list-item>
+        <mat-list-item routerLink="/ventas">
+          <mat-icon>shopping_cart</mat-icon>
+          <span>VENTAS</span>
+        </mat-list-item>
+        <mat-list-item routerLink="/inventario">
+          <mat-icon>inventory</mat-icon>
+          <span>INVENTARIO</span>
+        </mat-list-item>
+        <mat-list-item routerLink="/informacion">
+          <mat-icon>person</mat-icon>
+          <span>Tu información</span>
+        </mat-list-item>
+        <mat-list-item (click)="onLogout()">
+          <mat-icon>exit_to_app</mat-icon>
+          <span>SALIR</span>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="top-border"></div>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

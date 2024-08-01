@@ -1,0 +1,17 @@
+<div class="usuario-info">
+  <h2>Datos del Usuario</h2>
+  <div class="usuario-card">
+    <img [src]="imagenUrl" alt="Avatar del Usuario" class="avatar">
+    <div class="usuario-detalles">
+      <p><strong>Nombre completo:</strong> {{ usuario.nombre_completo }}</p>
+      <p><strong>Correo electrónico:</strong> {{ usuario.correo_electronico }}</p>
+    </div>
+  </div>
+  <form>
+    <label for="imageUpload" class="custom-file-upload">
+      <input type="file" id="imageUpload" (change)="onFileChange($event)"> Seleccionar imagen
+    </label>
+    <button type="button" class="upload-button" (click)="uploadImage()">Subir Imagen</button>
+    <button type="button" class="delete-button" (click)="deleteImage()">Eliminar Imagen</button>
+  </form>
+</div>

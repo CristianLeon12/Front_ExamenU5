@@ -1,0 +1,62 @@
+<!-- inventario.component.html -->
+<div class="container">
+    <br>
+    <h2 class="page__heading" style="color: #000; text-align: center; font-size:45px;">INVENTARIOS</h2>
+    <br>
+    <div class="section-body">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <button mat-raised-button color="primary" (click)="agregarInventario()" style="margin-bottom: 24px;">
+                Agregar Inventario
+              </button>
+              <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="width: 100%;">
+                <ng-container matColumnDef="id">
+                  <th mat-header-cell *matHeaderCellDef style="font-size: 18px;"> ID </th>
+                  <td mat-cell *matCellDef="let inventario" style="font-size: 18px;"> {{inventario.id}} </td>
+                </ng-container>
+  
+                <ng-container matColumnDef="nombre">
+                  <th mat-header-cell *matHeaderCellDef style="font-size: 18px;"> Nombre </th>
+                  <td mat-cell *matCellDef="let inventario" style="font-size: 18px;"> {{inventario.nombre}} </td>
+                </ng-container>
+  
+                <ng-container matColumnDef="descripcion">
+                  <th mat-header-cell *matHeaderCellDef style="font-size: 18px;"> Descripción </th>
+                  <td mat-cell *matCellDef="let inventario" style="font-size: 18px;"> {{inventario.descripcion}} </td>
+                </ng-container>
+  
+                <ng-container matColumnDef="color">
+                  <th mat-header-cell *matHeaderCellDef style="font-size: 18px;"> Color </th>
+                  <td mat-cell *matCellDef="let inventario" style="font-size: 18px;"> {{inventario.color}} </td>
+                </ng-container>
+  
+                <ng-container matColumnDef="cantidad">
+                  <th mat-header-cell *matHeaderCellDef style="font-size: 18px;"> Cantidad </th>
+                  <td mat-cell *matCellDef="let inventario" style="font-size: 18px;"> {{inventario.cantidad}} </td>
+                </ng-container>
+  
+                <ng-container matColumnDef="acciones">
+                  <th mat-header-cell *matHeaderCellDef style="font-size: 18px;"> Acciones </th>
+                  <td mat-cell *matCellDef="let inventario">
+                    <button mat-icon-button color="accent" (click)="editarInventario(inventario)">
+                      <mat-icon>edit</mat-icon>
+                    </button>
+                    <button mat-icon-button color="warn" (click)="eliminarInventario(inventario)">
+                      <mat-icon>delete</mat-icon>
+                    </button>
+                  </td>
+                </ng-container>
+  
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+              </table>
+              <mat-paginator [pageSize]="5"></mat-paginator>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

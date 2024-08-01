@@ -1,0 +1,23 @@
+.sidenav-container {
+    height: 100%;
+  }
+  
+  .sidenav {
+    width: 250px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .mat-icon {
+    margin-right: 10px;
+  }
+  
+  .top-border {
+    height: 70px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+  }
+  
