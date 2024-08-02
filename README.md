@@ -1,3 +1,4 @@
+EXPLICACIÓN DEL PROYECTO
 Este proyecto fue generado con Angular CLI versión 17.3.8. Es una aplicación de Angular diseñada para proporcionar una interfaz de usuario eficiente y moderna. A continuación, se detallan las principales características y funcionalidades del proyecto.
 
 Objetivo del Proyecto
