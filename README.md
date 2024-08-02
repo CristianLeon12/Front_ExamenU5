@@ -1,8 +1,8 @@
 Front_ExamenU5
-Este proyecto fue generado con Angular CLI versión 17.3.8. Es una aplicación de Angular diseñada para proporcionar una interfaz de usuario eficiente y moderna. A continuación, se detallan las principales características y funcionalidades del proyecto.
+Este proyecto fue generado con Angular CLI versión 17.3.8. Es una aplicación de Angular diseñada para proporcionar una interfaz de usuario eficiente y moderna. A continuación, se detallan las principales características y funcionalidades del proyecto desarrollado para conectar con la api elaborada en laravel.
 
 Objetivo del Proyecto
-El objetivo principal de este proyecto es desarrollar una interfaz de usuario interactiva que gestione diferentes módulos como Usuarios, Ventas e Inventario, utilizando Angular y Angular Material.
+El objetivo principal de este proyecto es desarrollar el backend para que el usuario interactiva que gestione diferentes módulos como Usuarios, Ventas e Inventario, utilizando Angular y Angular Material.
 
 Características Principales
 Autenticación de Usuario: Incluye un formulario de inicio de sesión y registro.
