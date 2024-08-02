@@ -16,6 +16,8 @@ Angular Material: Utilizado para diseñar componentes UI atractivos y responsivo
 Karma: Para ejecutar pruebas unitarias.
 E2E Testing: Configuración para pruebas de extremo a extremo.
 Configuración y Uso
+Para clonar y ejecutar este proyecto, sigue estos pasos:
+
 Clona el repositorio:
 
 bash
